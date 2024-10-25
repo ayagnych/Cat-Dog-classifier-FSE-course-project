@@ -16,4 +16,4 @@ process:
 	@docker exec $(CONTAINER_NAME) python /mount/script.py
 
 test:
-    python -m unittest discover
+	python -m unittest discover
