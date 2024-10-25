@@ -6,7 +6,7 @@ import os
 
 path_to_model = './model.h5'
 path_to_image = './input/images2.jpeg'
-input_dir = '/input'
+input_dir = "input"
 output_raw_dir = '/output_raw'
 output_dir = '/output'
 
