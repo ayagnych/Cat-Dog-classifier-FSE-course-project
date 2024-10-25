@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up dependencies
+        run: |
+          # Install dependencies if needed
+          sudo apt-get update
+          sudo apt-get install -y build-essential
+
+      - name: Build
+        run: |
+          # Run the default make target
+          make
+
+      - name: Run tests
+        run: |
+          # Run tests defined in the Makefile, assuming `make test` exists
+          make test
+
+      - name: Clean up
+        run: |
+          # Run clean-up command in Makefile, if any
+          make clean
