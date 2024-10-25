@@ -17,3 +17,8 @@ process:
 
 test:
 	python -m unittest discover
+
+.PHONY: clean
+
+clean:
+	rm -f *.o my_executable
