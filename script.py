@@ -12,6 +12,8 @@ output_dir = "output_raw"
 
 model = keras.models.load_model(path_to_model)
 
+os.makedirs(output_dir, exist_ok=True)
+
 def preprocess(input_dir, output_dir):
     # Load images from input_raw, resize them, and save them in input folder
     for img_name in os.listdir(input_dir):
