@@ -6,9 +6,9 @@ import os
 
 path_to_model = './model.h5'
 path_to_image = './input/images2.jpeg'
-input_dir = '/mount/input'
-output_raw_dir = '/mount/output_raw'
-output_dir = '/mount/output'
+input_dir = '/input'
+output_raw_dir = '/output_raw'
+output_dir = '/output'
 
 model = keras.models.load_model(path_to_model)
 
