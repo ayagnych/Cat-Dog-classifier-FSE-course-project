@@ -14,3 +14,6 @@ run:
 # Target: Preprocess data
 process:
 	@docker exec $(CONTAINER_NAME) python /mount/script.py
+
+test:
+    python -m unittest discover
