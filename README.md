@@ -1,6 +1,12 @@
 # Cat/Dog classifier-FSE course project
 Educational project for the course "Foundations of software engineering for AI". The project is designed for image processing and classification using a pretrained machine learning model.
 
+The team:
+Gribanov Dmitry
+Kalinkin Alexei
+Nabiev Timur
+Yagnych Anastasia
+
 # Running the project
 
 ### Clone the repo
